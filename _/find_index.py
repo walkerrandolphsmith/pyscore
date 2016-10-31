@@ -1,4 +1,4 @@
-def find(collection, predicate):
+def find_index(collection, predicate):
     i = 0
     for element in collection:
         if predicate(element):

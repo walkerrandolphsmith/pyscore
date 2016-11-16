@@ -1,11 +1,10 @@
 import unittest
-from _ import find_all
+from _.main import find_all
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-
-        self.find_all = find_all.find_all
+        self.find_all = find_all
 
     def test_find_all_filters_out_elements_that_dont_satisfy_predicate(self):
         first = {"id": 1, "size": "M"}

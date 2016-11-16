@@ -1,11 +1,10 @@
 import unittest
-from _ import difference
+from _.main import difference
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-
-        self.difference = difference.difference
+        self.difference = difference
 
     def test_difference_returns_all_elements_in_a_not_in_b(self):
         a = [1, 2, 3]

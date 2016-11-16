@@ -1,11 +1,10 @@
 import unittest
-from _ import find
+from _.main import find
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-
-        self.find = find.find
+        self.find = find
 
     def test_find_returns_first_element_that_satisfies_predicate(self):
         first = {"id": 1, "size": "L"}

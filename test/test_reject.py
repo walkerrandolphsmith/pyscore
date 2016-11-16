@@ -1,10 +1,10 @@
 import unittest
-from _ import reject
+from _.main import reject
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.reject = reject.reject
+        self.reject = reject
 
     def test_reject_returns_list_without_elements_that_pass_predicate(self):
         first = {"id": 1, "size": "L"}

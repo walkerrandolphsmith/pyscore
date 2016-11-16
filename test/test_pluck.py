@@ -1,10 +1,10 @@
 import unittest
-from _ import pluck
+from _.main import pluck
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.pluck = pluck.pluck
+        self.pluck = pluck
 
     def test_some_returns_true_if_any_element_satisfies_predicate(self):
         first = {"id": 1, "size": "M"}

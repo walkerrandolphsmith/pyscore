@@ -1,10 +1,10 @@
 import unittest
-from _ import reverse
+from _.main import reverse
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.reverse = reverse.reverse
+        self.reverse = reverse
 
     def test_reverse_reverses_a_list(self):
         expected = [3, 2, 1]

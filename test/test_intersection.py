@@ -1,11 +1,10 @@
 import unittest
-from _ import intersection
+from _.main import intersection
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-
-        self.intersection = intersection.intersection
+        self.intersection = intersection
 
     def test_intersection_returns_elements_that_are_members_of_a_and_b(self):
         expected = [1]

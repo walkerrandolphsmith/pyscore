@@ -1,10 +1,10 @@
 import unittest
-from _ import partition
+from _.main import partition
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.partition = partition.partition
+        self.partition = partition
 
     def test_some_returns_true_if_any_element_satisfies_predicate(self):
         first = {"id": 1, "size": "M"}

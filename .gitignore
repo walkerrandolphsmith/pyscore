@@ -14,5 +14,7 @@
 [Ss]cripts
 pyvenv.cfg
 .venv
+venv
 pip-selfcheck.json
 man/
+__pycache__

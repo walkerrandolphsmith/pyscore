@@ -1,10 +1,10 @@
 import unittest
-from _ import group_by
+from _.main import group_by
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.group_by = group_by.group_by
+        self.group_by = group_by
 
     def test_group_by_groups_values_by_key(self):
         expected = {

@@ -1,10 +1,10 @@
 import unittest
-from _ import every
+from _.main import every
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.every = every.every
+        self.every = every
 
     def test_every_returns_true_if_all_elements_pass_predicate(self):
         first = {"id": 1, "size": "L"}

@@ -1,10 +1,10 @@
 import unittest
-from _ import some
+from _.main import some
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-        self.some = some.some
+        self.some = some
 
     def test_some_returns_true_if_any_element_satisfies_predicate(self):
         first = {"id": 1, "size": "M"}

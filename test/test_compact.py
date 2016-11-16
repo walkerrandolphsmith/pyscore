@@ -1,11 +1,10 @@
 import unittest
-from _ import compact
+from _.main import compact
 
 class sut(unittest.TestCase):
 
     def setUp(self):
-
-        self.compact = compact.compact
+        self.compact = compact
 
     def test_compact_filters_out_falsy_values(self):
         expected = [True, 3]

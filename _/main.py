@@ -64,17 +64,17 @@ def intersection(collection, other_collection):
     return list(set(collection).intersection(other_collection))
 
 
-def partition(c, p):
+def partition(collection, predicate):
     l1, l2 = [], []
-    for e in c:
-        l1.append(e) if p(e) else l2.append(e)
+    for element in collection:
+        l1.append(element) if predicate(element) else l2.append(element)
     return [l1, l2]
 
 
-def pluck(c, property_name):
+def pluck(collection, property_name):
     l = []
-    for e in c:
-        l.append(e[property_name])
+    for element in collection:
+        l.append(element[property_name])
     return l
 
 
@@ -90,9 +90,9 @@ def reverse(collection):
     return collection[::-1]
 
 
-def some(c, p):
-    for e in c:
-        if p(e):
+def some(collection, predicate):
+    for element in collection:
+        if predicate(element):
             return True
     return False
 

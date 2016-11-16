@@ -94,3 +94,9 @@ def _unique(collection):
 
 def unique(collection):
     return [collection[i] for i, _ in _unique(collection)]
+
+def without(collection, *values):
+    for v in values:
+        if v in collection:
+            collection.remove(v)
+    return collection

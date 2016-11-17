@@ -1,7 +1,7 @@
 import inspect
 
 
-def map(collection, iteratee):
+def map_(collection, iteratee):
     new_collection = []
     number_of_arguments = len(inspect.getargspec(iteratee)[0])
     for i, element in enumerate(collection):

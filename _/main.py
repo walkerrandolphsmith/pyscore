@@ -1,3 +1,15 @@
+import inspect
+
+
+def map(collection, iteratee):
+    new_collection = []
+    number_of_arguments = len(inspect.getargspec(iteratee)[0])
+    for i, element in enumerate(collection):
+        element_to_add = iteratee(element, i) if number_of_arguments == 2 else iteratee(element)
+        new_collection.append(element_to_add)
+    return new_collection
+
+
 def compact(collection):
     return [element for element in collection if element]
 

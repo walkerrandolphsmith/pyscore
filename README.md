@@ -7,12 +7,20 @@ Setup Virtual Environment
 virtualenv venv --no-site-packages
 ```
 
-Install packages
+Note: For the remaining steps windows users will find their virtual environment dependencies in
+`Scripts` instead of `bin`.
+
+Install dependencies
 ```
 ./venv/bin/pip install -r requirements.txt
 ```
 
+Update dependencies
+```
+./venv/bin/shovel tasks.install
+```
+
 Run specs
 ```
-./venv/bin/nosetests test
+./venv/bin/shovel tasks.test
 ```

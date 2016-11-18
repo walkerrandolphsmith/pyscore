@@ -19,8 +19,8 @@ def difference(collection, other_collection):
 
 
 def every(collection, predicate):
-    for e in collection:
-        if not predicate(e):
+    for element in collection:
+        if not predicate(element):
             return False
     return True
 
@@ -92,9 +92,9 @@ def pluck(collection, property_name):
 
 def reject(collection, predicate):
     l = []
-    for e in collection:
-        if not predicate(e):
-            l.append(e)
+    for element in collection:
+        if not predicate(element):
+            l.append(element)
     return l
 
 

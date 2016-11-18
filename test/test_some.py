@@ -1,19 +1,20 @@
 import unittest
 from _.main import some
 
-class sut(unittest.TestCase):
+
+class Sut(unittest.TestCase):
 
     def setUp(self):
-        self.some = some
+        self.sut = some
 
     def test_some_returns_true_if_any_element_satisfies_predicate(self):
         first = {"id": 1, "size": "M"}
         second = {"id": 2, "size": "M"}
         third = {"id": 3, "size": "L"}
         expected = True
-        actual = self.some([first, second, third], lambda e: e['size'] == 'L')
+        actual = self.sut([first, second, third], lambda e: e['size'] == 'L')
         self.assertEqual(expected, actual)
 
         expected = False
-        actual = self.some([first, second, third], lambda e: e['size'] == 'S')
+        actual = self.sut([first, second, third], lambda e: e['size'] == 'S')
         self.assertEqual(expected, actual)

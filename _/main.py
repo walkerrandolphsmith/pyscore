@@ -134,3 +134,10 @@ def without(collection, *values):
         if v in collection:
             collection.remove(v)
     return collection
+
+
+def contains(collection, value):
+    for element in collection:
+        if element == value:
+            return True
+    return False

@@ -1,5 +1,6 @@
 import inspect
-
+import math
+import random
 
 def map_(collection, iteratee):
     new_collection = []
@@ -141,3 +142,27 @@ def contains(collection, value):
         if element == value:
             return True
     return False
+
+
+def _get_index(size):
+    return int(math.floor(random.random() * (size - 1)))
+
+
+def _get_indexes(list_size, sample_size):
+    counter = 0
+    indexes = []
+    while counter < sample_size:
+        index = _get_index(list_size)
+        if not contains(indexes, index):
+            indexes.append(index)
+            counter += 1
+    return indexes
+
+
+def sample(collection, sample_size=None):
+    length = len(collection)
+    if sample_size is None:
+        index = _get_index(length)
+        return [collection[index]]
+    else:
+        return _get_indexes(length, sample_size)

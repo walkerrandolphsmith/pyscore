@@ -24,3 +24,8 @@ Run specs
 ```
 ./venv/bin/shovel tasks.test
 ```
+
+Run single spec
+```
+./venv/bin/shovel tasks.test [test filename]
+```

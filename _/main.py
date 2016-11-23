@@ -166,3 +166,9 @@ def sample(collection, sample_size=None):
         return [collection[index]]
     else:
         return _get_indexes(length, sample_size)
+
+
+def last(collection, n=1):
+    n = -1 * n
+    result = collection[n:]
+    return result[0] if len(result) is 1 else result

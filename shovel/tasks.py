@@ -8,10 +8,15 @@ PACKAGE_NAME = '_'
 @task
 def install():
     print('Install latest dependencies')
-    os.system('{0}pip install -r {1}'.format(VENV, REQUIREMENTS))
+    os.system('{}pip install -r {}'.format(VENV, REQUIREMENTS))
 
 
 @task
 def test():
     print('walker')
-    os.system('{0}nosetests test'.format(VENV))
+    os.system('{}nosetests test'.format(VENV))
+
+@task
+def testone(testfile):
+    print('alejandro')
+    os.system('{}nosetests test/{}'.format(VENV, testfile))

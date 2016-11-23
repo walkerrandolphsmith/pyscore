@@ -172,3 +172,9 @@ def last(collection, n=1):
     n = -1 * n
     result = collection[n:]
     return result[0] if len(result) is 1 else result
+
+
+def initial(collection, n=1):
+    n = -1 * n
+    result = collection[:n]
+    return result[0] if len(result) is 1 else result

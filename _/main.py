@@ -169,12 +169,12 @@ def sample(collection, sample_size=None):
 
 
 def last(collection, n=1):
-    n = -1 * n
-    result = collection[n:]
+    result = collection[(-1*n):]
     return result[0] if len(result) is 1 else result
 
 
 def initial(collection, n=1):
-    n = -1 * n
+    result = collection[:(-1*n)]
+    return result[0] if len(result) is 1 else result
     result = collection[:n]
     return result[0] if len(result) is 1 else result

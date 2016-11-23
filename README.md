@@ -27,5 +27,5 @@ Run specs
 
 Run single spec
 ```
-./venv/bin/shovel tasks.test [test filename]
+./venv/bin/shovel tasks.testone [test filename]
 ```

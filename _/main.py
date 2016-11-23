@@ -181,3 +181,8 @@ def initial(collection, n=1):
 def first(collection, n=1):
     result = collection[:n]
     return result[0] if len(result) is 1 else result
+
+
+def rest(collection, n=1):
+    result = collection[n:]
+    return result[0] if len(result) is 1 else result

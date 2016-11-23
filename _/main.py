@@ -176,5 +176,8 @@ def last(collection, n=1):
 def initial(collection, n=1):
     result = collection[:(-1*n)]
     return result[0] if len(result) is 1 else result
+
+
+def first(collection, n=1):
     result = collection[:n]
     return result[0] if len(result) is 1 else result

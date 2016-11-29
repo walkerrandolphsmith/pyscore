@@ -1,4 +1,4 @@
-# PyScore
+# PyScore [![Build Status](https://travis-ci.org/agguzman/pyscore.svg?branch=master)](https://travis-ci.org/agguzman/pyscore)
 
 Collection of utility functions in Python inspired by Underscore and Lodash
 
@@ -23,4 +23,9 @@ Update dependencies
 Run specs
 ```
 ./venv/bin/shovel tasks.test
+```
+
+Run single spec
+```
+./venv/bin/shovel tasks.testone [test filename]
 ```

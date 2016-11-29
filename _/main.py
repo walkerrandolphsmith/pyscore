@@ -2,6 +2,7 @@ import inspect
 import math
 import random
 
+
 def map_(collection, iteratee):
     new_collection = []
     number_of_arguments = len(inspect.getargspec(iteratee)[0])

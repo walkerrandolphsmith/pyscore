@@ -12,6 +12,10 @@ def map_(collection, iteratee):
     return new_collection
 
 
+def where(collection, predicate):
+    return [element for element in collection if predicate(element)]
+
+
 def compact(collection):
     return [element for element in collection if element]
 
@@ -25,14 +29,6 @@ def every(collection, predicate):
         if not predicate(element):
             return False
     return True
-
-
-def find_all(collection, predicate):
-    new_list = []
-    for element in collection:
-        if predicate(element):
-            new_list.append(element)
-    return new_list
 
 
 def find_index(collection, predicate):
@@ -109,10 +105,6 @@ def some(collection, predicate):
         if predicate(element):
             return True
     return False
-
-
-def take_while(collection, predicate):
-    return [element for element in collection if predicate(element)]
 
 
 def union(collection, other_collection):

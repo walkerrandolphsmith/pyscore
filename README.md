@@ -10,22 +10,27 @@ virtualenv venv --no-site-packages
 Note: For the remaining steps windows users will find their virtual environment dependencies in
 `Scripts` instead of `bin`.
 
+Activate venv
+```
+source venv/bin/activate
+```
+
 Install dependencies
 ```
-./venv/bin/pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Update dependencies
 ```
-./venv/bin/shovel tasks.install
+shovel tasks.install
 ```
 
 Run specs
 ```
-./venv/bin/shovel tasks.test
+shovel tasks.test
 ```
 
 Run single spec
 ```
-./venv/bin/shovel tasks.testone [test filename]
+shovel tasks.testone [test filename]
 ```

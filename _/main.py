@@ -107,6 +107,16 @@ def some(collection, predicate):
     return False
 
 
+def take_while(collection, predicate):
+    out = []
+    for element in collection:
+        if predicate(element):
+            out.append(element)
+        else:
+            break
+    return out
+
+
 def union(collection, other_collection):
     return list(set(collection).union(other_collection))
 
